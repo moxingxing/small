@@ -1,0 +1,187 @@
+{{extend ("solution://base/index-pc.xtpl")}}
+{{#block("body")}}
+  {{! 上面已引用了天猫公共头尾，不需要再写<html>, <body>, <head>，直接在这里开始写代码。}}
+  {{! 你也可以把这段代码清空，完全自己编写。}}
+  <script src="//g.alicdn.com/??kissy/k/1.4.14/seed-min.js,tb/global/3.5.5/global-min.js"></script>
+ <style>
+#content, #header, #main-nav-content, #footer {
+            width: 100%!important;
+        }
+.clearfix:before, .clearfix:after {content: "";height: 0;display: block;visibility: hidden;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+.con-sj{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: 'microsoft yahei', 'impact';
+}
+.con-sj img {
+	vertical-align: bottom;
+	border: 0;
+}
+.con-sj a,.con-sj a:hover,.con-sj area{
+	text-decoration:none;
+	outline:none;
+}
+.con-sj .wrapper{
+	width:100%;
+	overflow:hidden;
+    position: relative;
+    background: #2aafeb;
+}
+.con-sj .module-con{
+	width:990px;
+	overflow:hidden;
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 24px;
+	position: relative;
+}
+.con-sj .sj-header{
+	width: 100%;
+	height: 500px; 
+	background: url(http://gtms03.alicdn.com/tps/i3/TB1ZAIGJFXXXXX4XXXX2FC5LVXX-1920-500.png) center center no-repeat;
+}
+.con-sj .heade-con{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+.con-sj .cont-1{
+	margin-top: 16px;
+}
+.con-sj .cont-2{
+	margin-top: 50px;
+}
+.con-sj .textbox{
+	width: 986px;
+	margin: 0 auto 0 3px;
+	background: #f5f5f5;
+	padding: 7px 0 55px 0;
+	border-radius: 0 0 5px 5px;
+}
+.con-sj .textarea{
+	width: 940px;
+	height: 535px;
+	border: 2px solid #dcdcdc;
+	margin: 0 auto;
+	background: #fff;
+	font-size: 16px;
+	color: #006db0;
+	padding: 1px;
+	border-radius: 5px;
+}
+.con-sj .textarea p{
+	width: 840px;
+	margin: 25px auto 0 auto;
+	line-height: 30px;
+}
+.con-sj .slider{
+	position: fixed;
+	left: 50%;
+	display: none;
+	width: 104px;
+	height: 292px;
+	top: 50%;
+	margin-left: 540px;
+	margin-top: -146px;
+}
+.con-sj .show{
+	display: block;
+	z-index: 9;
+}
+.con-sj .fix{
+	top: 25%;
+}
+.con-sj .btn{
+	position: absolute;
+	top: 233px;
+	left: 491px;
+	z-index: 9;
+}
+</style>
+<div data-spm="$spm_module_id" class="con-sj">
+    <div class="wrapper">
+        <div class="slider">
+        	<img src="http://gtms01.alicdn.com/tps/i1/TB1PJAeJFXXXXXaXVXXU8gFYVXX-104-292.png" width="104" height="292" usemap="#Map" alt="侧导航">
+            <map name="Map">
+              <area shape="rect" coords="10,51,94,80" href="#one" target="_self">
+              <area shape="rect" coords="14,84,94,117" href="#two" target="_self">
+              <area shape="rect" coords="13,125,96,150" href="#th" target="_self">
+              <area shape="rect" coords="13,156,91,185" href="#more" target="_self">
+              <area shape="rect" coords="14,194,90,221" href="#rule" target="_self">
+            </map>			
+        </div>
+        <div class="sj-header">
+        	<div class="heade-con">
+        		<img src="http://gtms04.alicdn.com/tps/i4/TB1mwEjJFXXXXbJXFXX.STwHXXX-990-180.png" width="990" height="180">
+        		<img src="http://gtms01.alicdn.com/tps/i1/TB1QXZvJFXXXXaWXpXX.STwHXXX-990-180.png" width="990" height="180">
+        		<img src="http://gtms02.alicdn.com/tps/i2/TB1ecsCJFXXXXb1XXXXdPzpHXXX-990-140.jpg" width="990" height="140" usemap="#Map2">
+                <map name="Map2">
+                  <area shape="rect" coords="160,95,328,129" href="#one" target="_self">
+                  <area shape="rect" coords="410,92,580,131" href="#two" target="_self">
+                  <area shape="rect" coords="662,95,823,126" href="#th" target="_self">
+                </map>
+                <div class="btn">
+                	<a href="http://www.taobao.com/market/car/usedcar.php" target="_blank"><img src="http://gtms01.alicdn.com/tps/i1/TB1DhGRJVXXXXXpXFXXecokTVXX-413-134.gif" width="413" height="134" alt="立即参与"></a>                	
+                </div>
+        	</div>
+        </div>
+		<!--990px的内容区块-->
+        <div class="module-con">
+         	<div class="cont-1">
+         		<a name="one"><img src="http://gtms03.alicdn.com/tps/i3/TB1ctIHJFXXXXXiXXXXKUgbHXXX-990-537.png" width="990" height="537" alt="一重礼"></a>
+         	</div>
+         	<div class="cont-2">
+         		<a name="two"><img data-ks-lazyload="http://gtms04.alicdn.com/tps/i4/TB1fMoqJFXXXXcVXpXXBljMHXXX-990-326.png" width="990" height="326" alt="二重礼"></a>
+         		<img data-ks-lazyload="http://gtms01.alicdn.com/tps/i1/TB1NZExJFXXXXXRXpXXBljMHXXX-990-326.png" width="990" height="326" alt="二重礼">
+         		<img data-ks-lazyload="http://gtms02.alicdn.com/tps/i2/TB1DdQfJFXXXXX2XVXXt6MaHXXX-990-529.png" width="990" height="529" alt="二重礼">         		
+         	</div>
+         	<div class="cont-2">
+         		<a name="th"><img data-ks-lazyload="http://gtms02.alicdn.com/tps/i2/TB1DKwtJFXXXXbDXpXXJMLWHXXX-990-382.jpg" width="990" height="382" alt="三重礼"></a>         		
+         	</div>
+         	<div class="cont-2">
+         		<a name="more"><img data-ks-lazyload="http://gtms03.alicdn.com/tps/i3/TB1BbMkJFXXXXbJXFXXghkeHXXX-990-553.png" width="990" height="553" alt="三重礼详情"></a> 
+         	</div>
+         	<div class="cont-2">
+         		<a name="rule"><img data-ks-lazyload="http://gtms04.alicdn.com/tps/i4/TB1VBZdJFXXXXaPXVXXzM6jHXXX-990-104.jpg" width="990" height="104" alt="活动规则"></a>
+         		<div class="textbox">
+         			<div class="textarea">
+         				<p>1、活动时间：2015年10月13日0:00:00——2015年11月11日23:59:59；</p>                        
+                        <p>2、用户参与资格：参与活动的淘宝用户，必须绑定支付宝实名认证；</p>                        
+                        <p>3、活动须知：活动参与方式详情见活动页面说明，其中有“惠”字标示的商家为参与此次活动的商家，各商家参与活动地域不同，兑奖方式不同，具体可参见“惠”字标说明；</p>                        
+                        <p>4、重要声明：中奖资格的排除凡以不正当手段（包括但不限于作弊领取、机器刷奖、恶意套现、扰乱系统、实施网络攻击等）参与本次活动的用户，淘宝有权终止其参与活动的资格或因其参加活动所获赠品或因此享有的利益；</p>                        
+                        <p>5、淘宝免责及注意事项：（1）活动期间，如遭遇自然灾害、网络攻击或系统故障等不可抗拒因素导致活动暂停举办，淘宝无须承担赔偿责任或进行补偿。（2）如因中奖用户未如实提供收件地址或拒收导致的奖品未能到达用户处，则视为中奖用户自动放弃中奖资格，淘宝无需承担任何责任。（3）淘宝可根据活动举办的实际情况，在法律允许的范围内，对本活动规则进行变动或调整，相关变动或调整将公布在活动规则页面上。 </p>         				
+         			</div>
+         		</div>
+         	</div>
+        </div>
+    </div>
+</div>
+<script>
+KISSY.use('node,dom,event,datalazyload',function(S,NODE,DOM,Event,DataLazyload){
+	var S = KISSY;
+	var D = S.DOM;
+	var $ =KISSY.all;
+    //懒加载
+      new KISSY.DataLazyload({diff:200})
+    //侧导航
+	window.onscroll = function () {
+			  //滚动条高度
+			  var top=document.documentElement.scrollTop || document.body.scrollTop;
+			 if(top>=500){
+				$('.slider').addClass("show");
+			 }else{
+			 	$('.slider').removeClass("show");			 	
+			 }
+			 if(top>=3600){
+				$('.slider').addClass("fix");
+			 }else{
+			 	$('.slider').removeClass("fix");			 	
+			 }
+		}
+
+});
+</script>
+{{/block}}
