@@ -1,7 +1,9 @@
-{{extend ("solution://base/index-pc.xtpl")}}
-{{#block("body")}}
-  {{! 上面已引用了天猫公共头尾，不需要再写<html>, <body>, <head>，直接在这里开始写代码。}}
-  {{! 你也可以把这段代码清空，完全自己编写。}}
+<!DOCTYPE>
+<html>
+<head>
+	<title>二手车</title>	
+	<meta charset="utf-8">
+</head>
   <script src="//g.alicdn.com/??kissy/k/1.4.14/seed-min.js,tb/global/3.5.5/global-min.js"></script>
  <style>
 #content, #header, #main-nav-content, #footer {
@@ -101,6 +103,7 @@
 	z-index: 9;
 }
 </style>
+<body>
 <div data-spm="$spm_module_id" class="con-sj">
     <div class="wrapper">
         <div class="slider">
@@ -159,6 +162,7 @@
         </div>
     </div>
 </div>
+</body>
 <script>
 KISSY.use('node,dom,event,datalazyload',function(S,NODE,DOM,Event,DataLazyload){
 	var S = KISSY;
@@ -184,4 +188,4 @@ KISSY.use('node,dom,event,datalazyload',function(S,NODE,DOM,Event,DataLazyload){
 
 });
 </script>
-{{/block}}
+</html>
